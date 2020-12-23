@@ -23,3 +23,28 @@ if (
 } else {
 	alert('Enter a valid month!!!');
 }
+
+switch (true) {
+	case month == 'january' ||
+		month == 'march' ||
+		month == 'may' ||
+		month == 'july' ||
+		month == 'august' ||
+		month == 'october' ||
+		month == 'december':
+		alert(`${month} has 31 days`);
+		break;
+	case month == 'april' ||
+		month == 'june' ||
+		month == 'may' ||
+		month == 'september' ||
+		month == 'november':
+		alert(`${month} has 30 days`);
+		break;
+	case month == 'february':
+		alert(`${month} has 28 days`);
+		break;
+	default:
+		alert('Enter a valid month!!!');
+		break;
+}
